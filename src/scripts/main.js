@@ -7,9 +7,9 @@ wall.addEventListener('click', (e) => {
   const wallRect = wall.getBoundingClientRect();
 
   let centerX =
-    e.clientX - wallRect.left - wall.clientLeft - spider.clientWidth / 2;
+    e.clientX - wallRect.left - wall.clientLeft - spider.offsetWidth / 2;
   let centerY =
-    e.clientY - wallRect.top - wall.clientTop - spider.clientHeight / 2;
+    e.clientY - wallRect.top - wall.clientTop - spider.offsetHeight / 2;
 
   if (centerX < 0) {
     centerX = 0;
