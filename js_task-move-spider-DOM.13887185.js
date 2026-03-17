@@ -1,0 +1,2 @@
+"use strict";var wall=document.querySelector(".wall"),spider=document.querySelector(".spider");wall.addEventListener("click",function(e){var t=wall.getBoundingClientRect(),l=e.clientX-t.left-wall.clientLeft-spider.offsetWidth/2,i=e.clientY-t.top-wall.clientTop-spider.offsetHeight/2;l<0&&(l=0),i<0&&(i=0);var r=wall.clientWidth-spider.offsetWidth,s=wall.clientHeight-spider.offsetHeight;l>r&&(l=r),i>s&&(i=s),spider.style.left=l+"px",spider.style.top=i+"px"});
+//# sourceMappingURL=js_task-move-spider-DOM.13887185.js.map
